@@ -1,0 +1,47 @@
+{
+    "name": "typescript-components-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "concurrently \"npm run webpack-dev-watch\" \"serve\"",
+      "webpack-dev-watch": "webpack --mode development --watch --progress --colors",
+      "sass-watch": "node-sass --output-style compressed --sourceMap true src/scss/ -o bin/css/ && node-sass --output-style compressed --sourceMap true -w src/scss/ -o bin/css/",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jomaras/typescript-components-test.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/jomaras/typescript-components-test/issues"
+    },
+    "homepage": "https://github.com/jomaras/typescript-components-test#readme",
+    "dependencies": {
+      "@types/react": "^16.4.13",
+      "classnames": "^2.2.6",
+      "core-js": "^2.5.7",
+      "react": "^16.4.2",
+      "react-dom": "^16.4.2"
+    },
+    "devDependencies": {
+      "@types/react-dom": "^16.0.7",
+      "concurrently": "^4.0.1",
+      "css-loader": "^1.0.0",
+      "html-loader": "^0.5.5",
+      "html-webpack-plugin": "^3.2.0",
+      "node-sass": "^4.9.3",
+      "sass-loader": "^7.1.0",
+      "sass-watch": "^0.1.0",
+      "serve": "^10.0.0",
+      "style-loader": "^0.23.0",
+      "ts-loader": "^4.5.0",
+      "typescript": "^3.0.3",
+      "webpack": "^4.17.1",
+      "webpack-bundle-analyzer": "^2.13.1",
+      "webpack-cli": "^3.1.0"
+    }
+  }
+  
